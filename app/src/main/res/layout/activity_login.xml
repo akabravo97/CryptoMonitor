@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cryptosasa.LoginActivity"
+    android:background="#5EFC82"
+    >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login To Your Profile"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/userlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/label"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/username" />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:hint="Username"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/userlayout"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/passwordone" />
+        <EditText
+            android:id="@+id/userPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginClick"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edit_view_btn"
+        android:layout_below="@id/passlayout"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/signuplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haven't signed up ? Join Us Now."
+            android:layout_weight="4"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:text="@string/signupString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signupClick"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

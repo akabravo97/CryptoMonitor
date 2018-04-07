@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5EFC82"
+    tools:context="com.cryptosasa.SignUpActivity">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/userlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/label"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/username" />
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:hint="Enter Username"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/userlayout"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/passwordone" />
+        <EditText
+            android:id="@+id/userPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/repasslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/passlayout"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/passwordone" />
+        <EditText
+            android:id="@+id/userRePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint=" Retype Password"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/namelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/repasslayout"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/nametwo" />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:hint="Enter Your Name"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_below="@id/namelayout"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/email" />
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:hint="Enter Your Email"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Sign Up"
+        android:onClick="signClick"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emaillayout"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edit_view_btn"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
